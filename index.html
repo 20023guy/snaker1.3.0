@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake For PC - Main Menu</title>
+
+<!-- Internal CSS -->
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #222;
+        color: #fff;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #555;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #777;
+    }
+
+    button:active {
+        background-color: #333;
+    }
+</style>
+</head>
+<body>
+
+<h1>Snake For PC</h1>
+
+<div class="button-container">
+    <button id="Easy">Easy</button>
+    <button id="Normal">Normal</button>
+    <button id="Hard">Hard</button>
+    <button id="Extreme">Extreme</button>
+    <button id="???">???</button>
+    <button id="Lore">Lore</button>
+</div>
+
+<!-- JavaScript Code -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Button click event listeners
+        document.getElementById("Normal").addEventListener("click", function() {
+            window.location.href = "normal.html";
+        });
+
+        document.getElementById("Easy").addEventListener("click", function() {
+            window.location.href = "easy.html";
+        });
+
+        document.getElementById("Hard").addEventListener("click", function() {
+            window.location.href = "Hard.html";
+        });
+
+        document.getElementById("Extreme").addEventListener("click", function() {
+            window.location.href = "extreme.html";
+        });
+
+        document.getElementById("???").addEventListener("click", function() {
+            window.location.href = "What.html";
+        });
+
+        document.getElementById("Lore").addEventListener("click", function() {
+            window.location.href = "Lore.html";
+        });
+
+        // Alerts for warnings and version
+        alert("WARNING: THIS IS BETA VERSION OF THE GAME. BUGS AND GLITCHES EXIST.");
+        alert("Welcome to Snake for spc. Version beta 1.3");
+    });
+</script>
+
+</body>
+</html>

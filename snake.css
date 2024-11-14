@@ -1,0 +1,31 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the title and instructions */
+h1, p {
+    text-align: center;
+    color: black; /* Corrected color value */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style the canvas board */
+#board {
+    background-color: black;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Center the canvas horizontally */
+    border: 2px solid #ffffff; /* White border around the canvas */
+}
+
+/* Style the score display */
+#score {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
